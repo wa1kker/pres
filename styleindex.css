@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2e2e2e; /* Темно-серый фон */
+    color: #dcdcdc; /* Светло-серый текст */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4b0082; /* Фиолетовый */
+    color: #fff; /* Белый текст */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1.main-heading, h2.sub-heading {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1.main-heading {
+    font-size: 2.5em;
+}
+
+h2.sub-heading {
+    font-size: 1.5em;
+}
+
+/* Стили навигации */
+nav {
+    background-color: #3a3a3a; /* Темно-серый для навигации */
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #b19cd9; /* Лавандовый фиолетовый для ссылок */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #dcdcdc; /* Светло-серый при наведении */
+}
+
+/* Контент */
+main {
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.side-nav {
+    flex: 1;
+    background-color: #3f3f3f; /* Темно-серый для боковой навигации */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.side-nav h3 {
+    color: #b19cd9; /* Лавандовый фиолетовый */
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin: 10px 0;
+}
+
+.side-nav ul li a {
+    color: #dcdcdc; /* Светло-серый */
+    text-decoration: none;
+}
+
+.side-nav ul li a:hover {
+    color: #b19cd9; /* Лавандовый фиолетовый при наведении */
+}
+
+.main-content {
+    flex: 3;
+    background-color: #3f3f3f; /* Темно-серый для основного контента */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-paragraph {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dcdcdc; /* Светло-серый текст */
+}
+
+.highlight {
+    background-color: #4b0082; /* Фиолетовый для выделения */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.highlight video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Видео карточки */
+.product-card {
+    background-color: #4e4e4e; /* Темно-серый для карточек */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #4b0082; /* Фиолетовый */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Стили для кнопок (если они есть на странице) */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}

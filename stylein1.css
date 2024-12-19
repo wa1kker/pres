@@ -1,0 +1,168 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2e2e2e; /* Темно-серый фон */
+    color: #dcdcdc; /* Светло-серый текст */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4b0082; /* Фиолетовый */
+    color: #fff; /* Белый текст */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1.main-heading, h2.sub-heading {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1.main-heading {
+    font-size: 2.5em;
+}
+
+h2.sub-heading {
+    font-size: 1.5em;
+}
+
+/* Стили навигации */
+nav {
+    background-color: #3a3a3a; /* Темно-серый для навигации */
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #b19cd9; /* Лавандовый фиолетовый для ссылок */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #dcdcdc; /* Светло-серый при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.side-nav {
+    flex: 1;
+    background-color: #3f3f3f; /* Темно-серый для боковой навигации */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.side-nav h3 {
+    color: #b19cd9; /* Лавандовый фиолетовый */
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin: 10px 0;
+}
+
+.side-nav ul li a {
+    color: #dcdcdc; /* Светло-серый */
+    text-decoration: none;
+}
+
+.side-nav ul li a:hover {
+    color: #b19cd9; /* Лавандовый фиолетовый при наведении */
+}
+
+.main-content {
+    flex: 3;
+    background-color: #3f3f3f; /* Темно-серый для основного контента */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-paragraph {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dcdcdc; /* Светло-серый текст */
+}
+
+/* Таблицы */
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #4e4e4e; /* Темно-серый для фона таблиц */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-table thead {
+    background-color: #4b0082; /* Фиолетовый для заголовков */
+    color: #fff; /* Белый текст в заголовках */
+}
+
+.main-table th, .main-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.main-table th {
+    font-weight: bold;
+}
+
+.main-table tr:hover {
+    background-color: #5e5e5e; /* Светло-серый при наведении */
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+/* Вставка карты */
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Футер */
+footer.main-footer {
+    background-color: #4b0082; /* Фиолетовый */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+
